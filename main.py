@@ -2,6 +2,10 @@ from fastmcp import FastMCP
 import os
 import psycopg
 from psycopg.rows import dict_row
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
